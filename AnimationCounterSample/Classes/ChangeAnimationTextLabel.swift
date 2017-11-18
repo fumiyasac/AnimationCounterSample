@@ -43,7 +43,9 @@ class ChangeAnimationTextLabel: UILabel {
         if self.text != targetText {
             layer.removeAllAnimations()
             layer.add(transition, forKey: key)
-            self.text = newText
+            self.text = targetText
+        } else {
+            self.text = targetText
         }
     }
 

@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     }
 
     //MARK: - @IBActions
-    
+
     @IBAction func inputNumberButtonTapped(_ sender: Any) {
         counterTextField.resignFirstResponder()
         let counterValue = counterTextField.text ?? ""
